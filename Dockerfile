@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.39.0-jammy
+FROM jonbri/playwright-extend
 EXPOSE 5173
 COPY . /app
 RUN cd /app && yarn install
