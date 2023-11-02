@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CONTAINER_NAME=$1
+if [ -z "$CONTAINER_NAME" ]; then
+    CONTAINER_NAME="wip"
+fi
+
+docker build --tag $CONTAINER_NAME .
+docker run -p 5173:5173 $CONTAINER_NAME
+
