@@ -427,6 +427,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@sillylib/sillylib@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@sillylib/sillylib/-/sillylib-1.0.1.tgz#06f8ef6cf2e282c56ec54ff1f91eb6c980e4f927"
+  integrity sha512-aLITGbMwr0MrvfTRUorqhoQGOl8HH3cwJ8Pa+0GinBlgHBY0Kti+P6XpgxA+M3QFu94SQp5PADbahC5oLzbvqQ==
+
 "@types/babel__core@^7.20.3":
   version "7.20.3"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.3.tgz#d5625a50b6f18244425a1359a858c73d70340778"
