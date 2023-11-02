@@ -9,7 +9,7 @@ function App() {
       <Heading>Wilbur</Heading>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>Click me</button>
-        <p>count is {count}</p>
+        <p data-testid="count">{count}</p>
       </div>
     </>
   )
