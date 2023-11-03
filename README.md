@@ -1,5 +1,12 @@
 # Wilbur
 
+WSL:
+```sh
+npx playwright install-deps
+yarn playwright install
+chmod -R 777 playwright-report
+```
+
 Build:
 ```sh
 yarn
