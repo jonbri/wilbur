@@ -14,13 +14,17 @@
     "test:report": "mkdir -p .nyc_output && npx nyc report --reporter=html",
     "docker-run": "./bin/docker-run",
     "docker-stop": "./bin/docker-stop",
-    "docker-enter": "./bin/docker-enter"
+    "docker-enter": "./bin/docker-enter",
+    "report": "npx nyc report --reporter=html",
+    "report:html": "npx nyc report --reporter=html",
+    "report:lcov": "npx nyc report --reporter=lcov",
+    "report:text": "npx nyc report --reporter=text",
+    "report:serve": "cd coverage && serve"
   },
   "dependencies": {
     "@sillylib/sillylib": "^1.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "v8-to-istanbul": "^9.1.3"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
@@ -33,8 +37,10 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "serve": "^14.2.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-istanbul": "^5.0.0"
   },
   "license": "ISC"
 }

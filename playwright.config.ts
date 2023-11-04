@@ -52,5 +52,8 @@ export default defineConfig({
   webServer: {
     command: 'yarn start',
     reuseExistingServer: !process.env.CI,
+    env: {
+      USE_BABEL_PLUGIN_ISTANBUL: '1',
+    },
   },
 });
