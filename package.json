@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "mkdir": "mkdir -p test-results playwright-report .nyc_output",
+    "clean": "yarn mkdir && rm -Rf test-results/* playwright-report/* .nyc_output/*",
+    "clean:show": "yarn mkdir && tree test-results playwright-report .nyc_output",
     "dev": "vite --host",
     "start": "vite --host",
     "start:coverage": "export USE_BABEL_PLUGIN_ISTANBUL=1 && yarn start",
