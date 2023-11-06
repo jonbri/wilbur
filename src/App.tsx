@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { Heading } from '@sillylib/sillylib'
 import './App.css'
 
+function deadCode() {
+  console.log('this is dead code');
+}
+
 function App() {
   const [count, setCount] = useState(0)
   return (
